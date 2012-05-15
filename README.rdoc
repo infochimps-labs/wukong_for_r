@@ -1,5 +1,10 @@
 = Writing a Hadoop Job in R using Wukong
 
+First, install everything (following works on Ubuntu 11.10):
+
+  $ sudo apt-get install r-core littler
+  $ sudo gem install wukong
+
 Run the provided scripts locally using
 
   $ ruby word_count.rb --run=local --map_command='r mapper.R' --reduce_command='r reducer.R' INPUT_FILE OUTPUT_FILE
